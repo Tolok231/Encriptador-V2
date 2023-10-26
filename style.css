@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+
+*{
+  font-family: 'Source Code Pro', monospace;
+}
+
+:root {
+  --color-terminal:#292b36;
+  --borde-redondo: 4px
+}
+
+body {
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #5c4b7a;
+    color: white;
+  }
+  main{
+    padding: 25px;
+ 
+    border-radius: var(--borde-redondo);
+}
+  
+  h1 {
+    color: #333;
+    margin: 0;
+  
+  }
+  
+  textarea {
+    width: 400px;
+    height: 100px;
+    margin: 10px;
+    padding: 5px;
+  }
+  
+  button {
+    position: relative;
+    margin: 10px;
+    background-color: rgb(230, 34, 77);
+    border-radius: 5px;
+    box-shadow: rgb(121, 18, 55) 0px 4px 0px 0px;
+    padding: 5px;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    width: 154px;
+    height: 45px;
+    color: #fff;
+    border: none;
+    font-size: 20px;
+    transition: all .3s ease-in-out;
+    z-index: 1;
+    overflow: hidden;
+  }
+  
+  button::before {
+    content: "";
+    background-color: rgb(50, 242, 248);
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: width 700ms ease-in-out;
+    display: inline-block;
+  }
+  
+  button:hover::before {
+    width: 100%;
+  }
+  
